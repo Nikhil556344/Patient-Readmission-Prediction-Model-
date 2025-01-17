@@ -1,5 +1,7 @@
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 # File paths
 diabetic_data_path = './dataset/diabetic_data.csv'
@@ -40,6 +42,12 @@ categorical_cols = diabetic_data.select_dtypes(include=['object']).columns
 diabetic_data = pd.get_dummies(diabetic_data, columns=categorical_cols, drop_first=True)
 
 # Step 4: Feature engineering
+# Add meaningful visualizations
+plt.figure(figsize=(10, 6))
+sns.countplot(data=diabetic_data, x='readmitted')
+plt.title('Distribution of Readmitted Patients')
+plt.savefig('./dataset/readmitted_distribution.png')
+
 # Remove irrelevant columns (e.g., 'encounter_id', 'patient_nbr')
 diabetic_data.drop(['encounter_id', 'patient_nbr'], axis=1, inplace=True)
 
