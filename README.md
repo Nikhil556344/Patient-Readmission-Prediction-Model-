@@ -16,6 +16,7 @@ Identified patterns in readmissions across different patient demographics.
 
 Implemented logistic regression and random forest models.
 Evaluated models using accuracy, F1-score, and ROC-AUC metrics.
-Visualization:
+
+**Visualization:**
 
 Designed interactive dashboards using Power BI to provide stakeholders with actionable insights.
