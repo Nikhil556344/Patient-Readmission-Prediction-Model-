@@ -20,3 +20,10 @@ Evaluated models using accuracy, F1-score, and ROC-AUC metrics.
 **Visualization:**
 
 Designed interactive dashboards using Power BI to provide stakeholders with actionable insights.
+
+**Technologies Used**
+
+Programming: Python (pandas, numpy, scikit-learn, matplotlib, seaborn)
+Database Management: SQL
+Visualization: Power BI
+Environment: Jupyter Notebook, Power BI Desktop
